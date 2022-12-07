@@ -6,8 +6,17 @@
 
 Console.Write("введите трехзначное число: ");
 int num = int.Parse(Console.ReadLine());
-
-int a = num / 10;
+if(num > 999 || num < 100) 
+{
+   Console.Write("число не является трехзначным"); 
+}
+else
+{
+    int a = num / 10;
 int b = a % 10;
 
 Console.Write($"вторая цифра --> {b}");
+}
+
+
+
